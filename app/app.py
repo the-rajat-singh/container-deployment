@@ -22,7 +22,7 @@ def about():
 def contact():
     return render_template("contact.html")
 
-# DevOps health endpoint
+# DevOps health endpoin
 @app.route("/health")
 def health():
     return jsonify(status="ok")
