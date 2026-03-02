@@ -27,7 +27,7 @@ def contact():
 def health():
     return jsonify(status="ok")
 
-# Deployment info endpoint
+# Deploy
 @app.route("/version")
 def version():
     return jsonify(
