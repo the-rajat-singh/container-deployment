@@ -5,7 +5,7 @@ on:
     paths:
       - 'terraform/**'
       - '.github/workflows/terraform.yml'
-  workflow_dispatch:   # manual trigger
+  workflow_dispatch:
 
 jobs:
 
@@ -50,7 +50,7 @@ jobs:
     runs-on: ubuntu-latest
 
     environment:
-      name: infra   # enable manual approval here
+      name: infra   
 
     defaults:
       run:
