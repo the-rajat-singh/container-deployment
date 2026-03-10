@@ -41,6 +41,10 @@ jobs:
         with:
           name: tfplan
           path: terraform/tfplan
+      - name: Run Checkov
+        uses: bridgecrewio/checkov-action@master
+        with:
+          directory: .
 
 
 # ---------------- APPLY ----------------
